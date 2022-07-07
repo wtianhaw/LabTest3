@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" rowHeight="74" id="HHf-hO-rfh" customClass="DetailCell" customModule="LabTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HHf-hO-rfh" id="0M2-aS-hq0">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fmn-Qf-vo5">
+                        <rect key="frame" x="8" y="8" width="396" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKQ-ts-29L">
+                                <rect key="frame" x="0.0" y="0.0" width="396" height="34.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-Gd-MBt">
+                                <rect key="frame" x="0.0" y="38.5" width="396" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GHN-Gd-MBt" secondAttribute="trailing" id="8Ev-qJ-3tG"/>
+                            <constraint firstItem="GHN-Gd-MBt" firstAttribute="leading" secondItem="Fmn-Qf-vo5" secondAttribute="leading" id="G1Q-D4-cOt"/>
+                            <constraint firstItem="BKQ-ts-29L" firstAttribute="leading" secondItem="Fmn-Qf-vo5" secondAttribute="leading" id="Mbr-jo-ZEe"/>
+                            <constraint firstAttribute="trailing" secondItem="BKQ-ts-29L" secondAttribute="trailing" id="Uss-qS-gsb"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fmn-Qf-vo5" firstAttribute="top" secondItem="0M2-aS-hq0" secondAttribute="top" constant="8" id="5dD-s0-S1G"/>
+                    <constraint firstItem="Fmn-Qf-vo5" firstAttribute="leading" secondItem="0M2-aS-hq0" secondAttribute="leading" constant="8" id="E69-w0-oJi"/>
+                    <constraint firstAttribute="bottom" secondItem="Fmn-Qf-vo5" secondAttribute="bottom" constant="8" id="O9E-0d-ena"/>
+                    <constraint firstAttribute="trailing" secondItem="Fmn-Qf-vo5" secondAttribute="trailing" constant="8" id="Y2S-y6-7cL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subtitle" destination="GHN-Gd-MBt" id="hX0-mN-0Br"/>
+                <outlet property="title" destination="BKQ-ts-29L" id="nTe-Ak-XfS"/>
+            </connections>
+            <point key="canvasLocation" x="49.275362318840585" y="-86.383928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
